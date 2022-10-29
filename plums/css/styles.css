@@ -1,0 +1,933 @@
+/*CSS Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*General*/	
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main { 
+	flex: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+ }
+ 
+h1, h2, h3, p, li, a, label {
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-weight: 800;
+	font-size: 2em;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+	max-width: 70ch;
+	font-weight: 500;
+}
+
+nav {
+	min-height: 100px;
+	padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul  li a {
+	text-decoration: none;
+	font-size: 0.8em;
+}
+
+nav ul  li a:hover {
+	font-size: 0.9em;
+	transition: 0.3s;
+}
+
+.logo {
+	font-size: 1.8em;
+	text-decoration: none;
+	font-weight: 800;
+}
+
+.button {
+	font-weight: 700;
+	text-decoration: none;
+	border: none;
+	border-radius: 50px;
+	padding: 1em;
+	box-shadow: 0px 2px 3px rgb(0 0 0 / 25%);
+	cursor: pointer;
+	display: inline-block;
+	min-width: 169px;
+}
+
+.button:hover {
+	transition: 0.3s;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.tilt-1 {
+	transform: rotateY(180deg);
+	background-color: white;
+    display: block;
+}
+
+.tilt-2 {
+	transform: rotate(180deg);
+	display: block;
+	background-color: white;
+	margin: -1px 0 -1px 0;
+}
+
+footer {
+	min-height: 100px;
+	font-size: 0.8em;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer nav {
+	display:none !important;
+}
+
+/*Colour Classes*/	
+.bc-purple {
+	background-color: #703E94;
+}
+
+.bc-green {
+	background-color: #89CAC7;
+}
+
+.bc-white {
+	background-color: #FFFFFF;
+}
+
+.bc-grey {
+	background-color: #E6E6E6!important;
+}
+
+.fc-white {
+	color: #FFFFFF;
+}
+
+.fc-black {
+	color: #000000;
+}
+
+/*Flex*/	
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.justify-content-center{
+	justify-content: center;
+}
+
+.justify-content-space-evenly{
+	justify-content: space-evenly;
+}
+
+.justify-content-space-around{
+	justify-content: space-around;
+}
+
+.align-items-center{
+ align-items: center;
+}
+
+.align-self-center{
+	align-self: center;
+}
+
+/*Alignment*/	
+.right-align {
+	margin-left: auto;
+}
+
+.text-center {
+	text-align:center;
+}
+
+/*Home*/	
+.hero-text {
+	font-size: 5.6em;
+	font-weight: 800;
+}
+
+.hero-text h2 {
+	letter spacing: 2px;
+}
+
+.intro-container {
+	max-width: 800px;
+	position: relative;
+}
+
+.intro-container img {
+	max-height: 750px;
+}
+
+em {
+	font-size: 1.8em;
+	color: #703E94;
+	font-weight: 800;
+}
+
+.hero-section {
+	padding: 6em 6em 1em 6em;
+}
+
+.btn-1 {
+	position: absolute;
+	top: 78%;
+}
+
+.p1 {
+	margin: 1.5em 0em 4em 0em;
+}
+
+.why-plums-container {
+    margin-left: 10%;
+	max-width: 20%;
+}
+
+.why-plums-container h2 {
+	align-self: center;
+	margin: 0 0 1.3em 0;
+}
+
+.section-2 {
+	padding: 5em;
+}
+
+.btn-2 {
+	position: absolute;
+	top: 80%;
+}
+
+.btn-3 {
+	position: absolute;
+	top: 84%;
+}
+
+.card-container {
+	position: relative;
+	padding: 5em 8em 15em 8em;
+}
+
+.card {
+	border-radius: 40px;
+    background-color: white;
+	min-height: 600px;
+	max-width: 420px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 3em;
+	box-shadow: 0px 2px 3px rgb(0 0 0 / 25%);
+}
+
+.card h2 {
+	padding: 1em 0 1em 0;
+	font-size: 1.7em;
+}
+
+/*Question*/	
+.question-container {
+	margin-top: 16vh;
+	margin-left: 5em;
+    margin-right: 5em;
+}
+
+.question-card {
+	position: relative;
+	border-radius: 40px;
+	min-height: 600px;
+	width: 420px;
+	display: flex;
+    flex-direction: column;
+	padding: 3em;
+	box-shadow: 0px 2px 3px rgb(0 0 0 / 25%);
+	cursor: pointer;
+}
+
+.question-card h2 {
+	align-self: flex-start;
+	margin: 0.5em 0 2em 0;
+}
+
+.question-card p {
+	font-weight: 600;
+}
+
+.progress-bar {
+	position: absolute;
+    top: 4%;
+    left: 69%;
+}
+
+label {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 2em;
+}
+
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 3em;
+  cursor: pointer;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: solid 2px purple;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #703E94;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+ 	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.btn-4 {
+	position: absolute;
+	top: 81%;
+	min-width: 169px;
+}
+
+/*Results*/
+.results-hero {
+	margin: 0px 8% 0 8%;
+}
+
+.results-container {
+	padding: 13rem 5rem 13rem 5rem;
+	position: relative;
+}
+
+.level-container {
+	position: relative;
+	padding: 0 1.5rem 0 1.5rem;
+}
+
+.arrow-1 {
+	position: absolute;
+	top: 61%;
+    left: 30%;
+}
+
+.arrow-2 {
+	position: absolute;
+    top: 58%;
+    left: 60%
+}
+
+.grade {
+    position: absolute;
+    top: 102%;
+	left: 30%;
+}
+
+.btn-6 {
+	position: absolute;
+	top: 107%;
+}
+
+.btn-7 {
+	position: absolute;
+	top: 107%;
+}
+
+.btn-8 {
+	position: absolute;
+	top: 107%;
+}
+
+.results-form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 7rem;
+}
+
+.results-form-container .submit {
+	width: 50%;
+	margin-right: 0px !important;
+}
+
+.login-form-section p {
+	font-weight: 800;
+}
+
+.results-form-container .login-form-section {
+	margin-left: 4rem;
+}
+
+.input-container {
+	justify-content: space-between;
+}
+
+.input-container input[type=text] {
+	width: 70%;
+}
+
+.to-do-list {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: solid 3px #703E94;
+    border-radius: 45px;
+	text-align: center;
+}
+
+.arrow-3 {
+	display:none;
+}
+
+/*Staff Login*/
+.login-container {
+	margin-top: 17vh;
+}
+
+.login img {
+	max-width: 385px;
+	margin-bottom: 2em;
+}
+
+.login-form-section {
+	width: 25%;
+}
+
+/* Full-width inputs */
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #703E94;
+  border-radius: 50px;
+  width: 48%;
+}
+
+.submit-button {
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+	font-weight: 700;
+    border: none;
+    color: white;
+    font-size: 20px;
+	background-color: #703E94;
+	display: flex !important;
+}
+
+fieldset {
+	border: none;
+	margin-top: 2em;
+}
+
+fieldset label {
+	margin: 0 1em 0 0;
+	font-size : 1.1em;
+	font-weight: 800;
+}
+
+legend {
+	display: none;
+}
+
+fieldset:hover {
+    border-color: #703E94 ;
+}
+
+.submit {
+	margin: 2em auto 0 auto;
+	width: 70%;
+}
+
+.form {
+	margin-bottom: 0.5em;
+}
+
+/*Login-Success*/
+.login-success-container {
+	margin-top:26vh;
+}
+
+.btn-5 {
+	position: absolute;
+	top: 61%;
+	min-width: 169px;
+}
+
+/*Success*/
+.success-container {
+	display: flex;
+    justify-content: center;
+}
+
+.success {
+	margin-top: 26vh;
+}
+
+/*Desktop*/
+@media (max-width: 1920px) {
+
+/*Desktop Home*/
+.why-plums-container {
+    max-width: 27%;
+}
+
+.btn-2 {
+    top: 80%
+}
+
+/*Desktop Question*/
+.question-container {
+    margin-top: 11vh;
+}
+
+/*Desktop Login*/
+.submit {
+    width: 75%;
+	margin: 2em auto 7em auto;
+}
+
+.login-container {
+    margin-top: 13vh;
+}
+
+/*Login  Success*/
+.login-success-container {
+    margin-top: 23vh;
+}
+	
+/*Desktop Success*/
+.btn-5 {
+    top: 65%;
+}
+
+.success {
+    margin-top: 23vh;
+}
+
+/*Desktop Results*/
+.results-container img {
+	max-width: 350px;
+}
+
+.results-container {
+	padding: 10rem 5rem 15rem 5rem;
+}
+
+.btn-6 {
+	top: 110%;
+}
+
+.btn-7 {
+	top: 110%;
+}
+
+.btn-8 {
+	top: 110%;
+}
+
+.arrow-1 {
+	top: 53%;
+    left: 30%;
+	max-width: 235px !important;
+}
+
+.arrow-2 {
+	top: 52%;
+    left: 56%;
+	max-width: 235px !important;
+}
+
+.grade {
+	top: 16%;
+    left: 29%;
+}
+
+.card {
+	padding-top: 1.5em;
+}
+
+.results-card {
+	padding-bottom: 12em;
+}
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+	
+/*Home Tablet*/
+.hero-section {
+	padding: 1em 2em 6em 2em;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+.hero-section  img {
+	max-width:550px;
+	
+}
+
+.btn-1 {
+    top: 95%;
+}
+
+.underline-one {
+	margin-top:1em;
+}
+
+.intro-container {
+	align-items: center;
+}
+	
+.p1 {
+    margin: 1.5em 0em 4em 0em;
+	padding: 0 1.5em 0 1.5em;
+}
+
+.section-2 {
+	flex-direction: column;
+    align-items: center;
+	padding: 5em 5em 8em 5em;
+}
+
+.why-plums-container {
+  margin-left: 0;
+  max-width: 65%;
+}
+
+	
+.why-plums-container h2 {
+    margin: 1.5em 0 1.3em 0;
+}
+
+.btn-2 {
+    top: 107%;
+}
+
+.card-container {
+	flex-direction: column;
+	align-items: center;
+	padding: 5em 8em 9em 8em;
+}
+
+.card {
+	margin-bottom: 5em;
+}
+
+.btn-3 {
+    top: 94%;
+}
+
+footer {
+	flex-direction: column;
+	min-height: 120px;
+}
+
+footer nav {
+	display: block !important;
+	min-height: 0px;
+	margin-bottom: 2em;
+}
+
+footer nav ul li a {
+	font-size: 1em !important;
+}
+
+/*Login Tablet*/
+.login-form-section {
+    width: 65%;
+}
+
+/*Question Tablet*/
+.question-container {
+	flex-direction: column-reverse;
+	margin-top: 5vh;
+	align-items: center;
+}
+
+.question-container img {
+	max-width: 550px;
+}
+
+.question-card {
+	align-self: center;
+	width: 100%;
+	box-shadow: none;
+	background-color: white !important;
+}
+
+/*Results Tablet*/
+.results-hero {
+	flex-direction:column;
+	margin-top: 5em;
+	padding: 1em 2em 10em 2em;
+}
+
+.arrow-3 {
+	margin-top: 2em;
+	display: block;
+}
+
+.results-hero img:nth-child(2) {
+	content: url(../images/underline-word-3.svg);
+	width: 500px;
+}
+
+.results-container {
+	flex-direction: column;
+}
+
+.level-container {
+	margin-bottom: 21em;
+}
+
+.level-container-3 {
+	margin-bottom: 0;
+}
+
+.grade {
+    top: 4%;
+    left: 65%;
+}
+
+.arrow-1 {
+    top: 34%;
+    left: 36%;
+	transform: rotate(90deg);
+}
+
+.arrow-2 {
+	transform: rotate(93deg);
+	top: 62%;
+    left: 36%;
+}
+
+.results-form-container {
+	flex-direction: column;
+	margin-right: 0;
+}
+
+.results-card {
+	padding: 5em 8em 0em 8em;
+}
+
+.results-card .card {
+	margin-bottom: 3em;
+}
+
+.login-form-section {
+    width: 54%;
+}
+
+.results-form-container .login-form-section {
+    margin-left: 0;
+}
+
+.input-container {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.input-container input[type=text] {
+    width: 100%;
+}
+
+.results-form-container .submit {
+	width: 100%;
+	margin: 4em auto 4em auto;
+}
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+	
+/*Home Mobile*/
+.hero-section img {
+    max-width: 370px;
+}
+
+h2 { 
+font-size: 1.7em;
+}
+
+.section-2 {
+	padding: 5em 3em 8em 3em;
+}
+
+.section-2 img {
+	max-width: 370px;
+}
+
+.why-plums-container h2 {
+	font-size: 1.7em;
+}
+
+.why-plums-container {
+	max-width: 100%;
+}
+
+.card {
+	max-width: 350px;
+	margin-bottom: 3em
+}
+
+.btn-3 {
+    top: 95%;
+}
+
+.card-container {
+    padding: 5em 8em 7em 8em;
+}
+
+/*Login Mobile*/
+.login-container {
+    margin-top: 4vh;
+}
+
+.login-form-section {
+    width: 80%;
+}
+
+.form {
+	flex-direction: column;
+}
+
+label {
+	align-self: flex-start;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+.submit {
+	margin: 2em auto 2em auto;
+}
+
+/*Login-Success Mobile*/
+.success {
+    margin-top: 17vh;
+}
+
+/*Question Mobile*/
+.question-container img {
+    max-width: 370px;
+}
+.question-container {
+	margin-left: 0em !important;
+	margin-right: 0em !important;
+}
+
+.question-card {
+	padding: 2em;
+}
+
+.progress-bar {
+	max-width: 100px !important;
+}
+
+/*Results Mobile*/
+.results-hero {
+	padding: 1em 2em 3em 2em;
+}
+
+.results-container img {
+	max-width: 300px;
+}
+
+.grade {
+    top: 3%;
+    left: 41%;
+}
+
+.arrow-1 {
+    left: 23%;
+}
+
+.arrow-2 {
+    left: 20%;
+}
+
+.results-card .card img {
+	max-width: 300px;
+}
+
+.results-card {
+	margin-bottom: 1em;
+	padding: 5em 1em 0em 1em;
+}
+
+.results-card .card {
+	margin-bottom: 0.5em;
+}
+
+.card-container-2 {
+padding: 5em 8em 1em 8em;
+}
+
+.to-do-list p {
+	font-size: 0.8em;
+}
+}
+	
