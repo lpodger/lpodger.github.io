@@ -617,6 +617,10 @@ fieldset:hover {
 @media (max-width: 768px) {
 	
 /*Home Tablet*/
+
+body {
+     overflow-x: hidden !important;
+}
 .hero-section {
 	padding: 1em 2em 6em 2em;
 	flex-direction: column-reverse;
